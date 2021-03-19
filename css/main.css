@@ -11,6 +11,11 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face{
+  font-family: "woodland";
+  src: url("../fonts/Woodland.ttf");
+}
+
 /* Margenes y bordes */
 *{
   margin: 0;

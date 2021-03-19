@@ -15,18 +15,18 @@
     <header>
         <div class="bar">
             <div class="bar-left">
-                <p>LOGOTIPO</p>
+                <span class="logo">PulpiDevs</span>
             </div>
 
             <div class="bar-right">
                 <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar.php" method="GET" autocomplete="off">
                     <input type="text" name="busqueda" placeholder="Buscar"/>
-                    <button type="submit" class="icono fa fa-search"></button>
+                    <button type="submit" class="fa fa-search"></button>
                 </form>
 
                 <div class="menu">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="icon fa fa-twitter"></i></a>
+                    <a href="#"><i class="icon fa fa-facebook"></i></a>
                 </div>
             </div>
         </div>
