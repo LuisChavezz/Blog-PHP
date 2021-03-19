@@ -14,6 +14,8 @@
                 <a href="#" class="continuar">Continuar leyendo...</a>
             </article>
         </div>
+
+        <?php require 'views/paginacion.php';?>
     </div>
 </body>
 </html>
