@@ -10,12 +10,13 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
     <header>
         <div class="bar">
             <div class="bar-left">
-                <span class="logo">PulpiDevs</span>
+                <span class="logo">PulpiBlog</span>
             </div>
 
             <div class="bar-right">
