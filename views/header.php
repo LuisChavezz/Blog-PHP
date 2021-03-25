@@ -16,7 +16,7 @@
     <header>
         <div class="bar">
             <div class="bar-left">
-                <span class="logo">PulpiBlog</span>
+                <span class="logo"><a href="<?php echo RUTA;?>">PulpiBlog</a></span>
             </div>
 
             <div class="bar-right">

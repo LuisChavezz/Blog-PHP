@@ -16,11 +16,12 @@
   src: url("../fonts/Woodland.ttf");
 }
 
-/* Margenes y bordes */
+/* Margenes, bordes y estilo de texto */
 *{
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 /* Border-Box Config */
