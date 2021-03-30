@@ -20,12 +20,12 @@ function cleanData ($data) {
 
 // Obtener el número de página actual
 function current_page () {
-    return isset($_GET['p']) ? (int)$_GET['p'] : 1;
+    return isset($_GET['page']) ? (int)$_GET['page'] : 1;
 }
 
 // Obtener posts
 function getPost ($post_per_page, $conexion) {
-    $inicio = ( current_page() > 1 ) ? current_page() * $post_per_page - $post_per_page : 0;
+    $inicio = ( current_page() > 1 ) ? current_page() * $post_per_page - $post_per_page : 0; // Cálculo para saber cuales artículos se mostrarán segun el número de página
 
     $statement = $conexion -> prepare("SELECT SQL_CALC_FOUND_ROWS * FROM articulos LIMIT $inicio, $post_per_page");
     $statement -> execute();

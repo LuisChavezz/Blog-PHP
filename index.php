@@ -6,7 +6,7 @@ require 'functions.php';
 // Conexión al BD
 $conexion = conexion($bd_config); 
 
-if(!$conexion) { //Sí existe la conexion a la BD
+if(!$conexion) { //Sí no existe la conexion a la BD
     header('Location: error.php');
 }
 
