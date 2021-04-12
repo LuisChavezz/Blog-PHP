@@ -7,7 +7,7 @@
             <div class="post">
                 <article>
                     <h1 class="titulo"><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['titulo']; ?></a></h1>
-                    <p class="fecha">Fecha del post</p>
+                    <p class="fecha"><?php echo $post['fecha']; ?></p>
                     <div class="thumb">
                         <a href="single.php?id=<?php echo $post['id']; ?>">
                             <img src="<?php echo RUTA; ?>/img/<?php echo $post['thumb']; ?>">

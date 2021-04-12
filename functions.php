@@ -31,8 +31,35 @@ function getPost ($post_per_page, $conexion) {
     $statement -> execute();
 
     return $statement -> fetchAll();
-
 }
+
+// Limpiará el 'id' obtenido del GET
+function id_article($id){
+    return (int)cleanData($id);
+}
+
+// Obtener post en específico
+function getPost_ID($conexion, $id){
+    $result = $conexion -> query("SELECT * FROM articulos WHERE id = $id LIMIT 1");
+    $result = $result -> fetch();
+    return ($result) ? $result : false;
+        // Si existe resultado, lo devuelve. Si no, devulvee falso.
+}
+
+// Cambiar formato de la fecha almacenada del post
+function fecha ($fecha) {
+    $timestamp = strtotime($fecha);
+    $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+
+    $dia = date('d', $timestamp) - 1;
+    $mes = date('m', $timestamp) - 1;
+    $anho = date('Y', $timestamp);
+
+    $fecha = "$dia de " . $meses[$mes] . " del $anho";
+    return $fecha;
+}
+
+
 
 
 
