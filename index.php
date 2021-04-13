@@ -17,6 +17,5 @@ if(!$posts) { //Sí no hay posts
     header('Location: error.php');
 }
 
-//
 require 'views/index.view.php';
 ?>

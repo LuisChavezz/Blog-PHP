@@ -33,6 +33,16 @@ function getPost ($post_per_page, $conexion) {
     return $statement -> fetchAll();
 }
 
+// Obtener el total de páginas a necesitar
+function numberPages($post_per_page, $conexion) { 
+    $totalPosts = $conexion -> prepare("SELECT FOUND_ROWS() AS total"); // Total de filas
+    $totalPosts -> execute();
+    $totalPosts = $totalPosts -> fetch()['total'];
+
+    $numberPages = ceil($totalPosts / $post_per_page); // 'Ceil' redondea hacia arriba
+    return $numberPages;
+}
+
 // Limpiará el 'id' obtenido del GET
 function id_article($id){
     return (int)cleanData($id);
