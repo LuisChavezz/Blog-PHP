@@ -20,7 +20,7 @@
             </div>
 
             <div class="bar-right">
-                <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>/buscar.php" method="GET" autocomplete="off">
+                <form name="busqueda" class="buscar" action="<?php echo RUTA; ?>buscar.php" method="GET" autocomplete="off">
                     <input type="text" name="busqueda" placeholder="Buscar"/>
                     <button type="submit" class="fa fa-search"></button>
                 </form>
