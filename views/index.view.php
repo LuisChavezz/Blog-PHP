@@ -28,6 +28,4 @@
         
     </div>
 
-    <?php require 'views/paginacion.php';?>
-</body>
-</html>
+<?php require 'views/paginacion.php';?>

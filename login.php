@@ -8,7 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //Sí se realizó la petición
 
     if ($user == $blog_admin['user'] && $password == $blog_admin['password']) {
         $_SESSION['admin'] = $blog_admin['user'];
-        header('Location:' . RUTA . 'admin.php');
+        header('Location:' . RUTA . 'admin');
     }
 }
 

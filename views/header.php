@@ -8,9 +8,9 @@
 
     <script src="https://kit.fontawesome.com/87f377c3df.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="<?php echo RUTA;?>css/main.css">
+    <link rel="stylesheet" href="<?php echo RUTA;?>css/index.css">
+    <link rel="stylesheet" href="<?php echo RUTA;?>css/header.css">
 </head>
 <body>
     <header>

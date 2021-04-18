@@ -69,7 +69,12 @@ function fecha ($fecha) {
     return $fecha;
 }
 
-
+// Comprobar la sesión iniciada
+function checkSession () {
+    if (!isset($_SESSION['admin'])) {
+        header('Location: ' . RUTA . 'login.php');
+    }
+}
 
 
 
