@@ -13,8 +13,9 @@ $blog_config = [
     'folder_img' => 'img/'
 ];
 
-/*$blog_admin = [
-
-];*/
+$blog_admin = [
+    'user' => 'Luis',
+    'password' => '1234'
+];
 
 ?>
