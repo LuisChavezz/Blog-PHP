@@ -1,7 +1,7 @@
 <?php require '../views/header.php'; ?>
 
 <h1>Panel de Control</h1>
-<a href="#">Crear nuevo post</a><br/>
+<a href="create.php">Crear nuevo post</a><br/>
 <a href="cerrar.php">Cerrar Sesión</a>
 
 <div class="container">

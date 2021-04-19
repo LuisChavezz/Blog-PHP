@@ -61,7 +61,7 @@ function fecha ($fecha) {
     $timestamp = strtotime($fecha);
     $meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-    $dia = date('d', $timestamp) - 1;
+    $dia = date('d', $timestamp);
     $mes = date('m', $timestamp) - 1;
     $anho = date('Y', $timestamp);
 

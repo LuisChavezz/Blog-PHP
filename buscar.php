@@ -10,6 +10,7 @@ if(!$conexion) { //Sí no existe la conexion a la BD
     header('Location: error.php');
 }
 
+// Sí la petición se realizó con éxito
 if ($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET['busqueda'])) {
     $busqueda = cleanData($_GET['busqueda']);
 
