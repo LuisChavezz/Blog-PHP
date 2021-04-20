@@ -13,7 +13,7 @@
                 <h1 class="titulo"><?php echo $post['titulo']; ?></a></h1>
                 <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
                 <a href="edit.php?id=<?php echo $post['id']; ?>">Editar</a>
-                <a href="#">Eliminar</a>
+                <a href="delete.php?id=<?php echo $post['id']; ?>">Eliminar</a>
             </article>
         </div>
     <?php endforeach; ?>
