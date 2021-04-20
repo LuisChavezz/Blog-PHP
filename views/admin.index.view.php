@@ -12,7 +12,7 @@
             <article>
                 <h1 class="titulo"><?php echo $post['titulo']; ?></a></h1>
                 <p class="fecha"><?php echo fecha($post['fecha']); ?></p>
-                <a href="editar.php?id=<?php echo $post['id']; ?>">Editar</a>
+                <a href="edit.php?id=<?php echo $post['id']; ?>">Editar</a>
                 <a href="#">Eliminar</a>
             </article>
         </div>
